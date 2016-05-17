@@ -1,0 +1,20 @@
+
+config.tx_extbase{
+    persistence{
+        classes{
+
+            GeorgRinger\News\Domain\Model\NewsDefault {
+                subclasses {
+                    Tx_VanillaComments_NewsDefault = Andinger\VanillaComments\Domain\Model\NewsDefault
+          		}
+            }
+            Andinger\VanillaComments\Domain\Model\NewsDefault {
+                mapping {
+                    tableName = tx_news_domain_model_news
+                    recordType = Tx_VanillaComments_NewsDefault
+                }
+            }
+            
+    	}
+    }
+}

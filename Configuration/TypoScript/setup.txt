@@ -1,0 +1,12 @@
+# ==============================================
+# FE-Plugin configuration for EXT:news
+# ==============================================
+plugin.tx_vanilla_integration {
+
+	mvc.callDefaultActionIfActionCantBeResolved = 1
+
+	settings {
+		client_id = typo3
+		secret = testtest
+	}
+}

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2016-05-14T14:32:19Z" product-name="vanilla_comments" target-language="de">
+		<header/>
+		<body>
+			<trans-unit id="no_comments">
+				<source>No comments</source>
+				<target>Keine Kommentare</target>
+			</trans-unit>
+			<trans-unit id="one_comment">
+				<source>One comment</source>
+				<target>Ein Kommentar</target>
+			</trans-unit>
+			<trans-unit id="num_comments">
+				<source>[num] comments</source>
+				<target>[num] Kommentare</target>
+			</trans-unit>
+			<trans-unit id="comments_disabled">
+				<source>Comments disabled</source>
+				<target>Kommentare deaktiviert</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

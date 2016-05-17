@@ -1,0 +1,7 @@
+-
+  uriPattern: 'sso'
+  defaults:
+    '@package':    'Andinger.vanilla_comments'
+    '@plugin':     'API'
+    '@controller': 'Sso'
+    '@action':     'sso'

@@ -1,0 +1,9 @@
+# cat=basic//1; type=string; label=Secret
+secret =
+
+# cat=basic//2; type=string; label=Client ID
+client_id =
+
+# cat=basic//3; type=string; label=Vanilla Forum URL
+url =
+

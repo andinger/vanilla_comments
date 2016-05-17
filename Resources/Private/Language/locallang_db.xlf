@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2016-05-14T14:32:19Z" product-name="vanilla_comments">
+		<header/>
+		<body>
+			<trans-unit id="tx_vanillacomments_domain_model_newsdefault">
+				<source>News Default</source>
+			</trans-unit>
+			<trans-unit id="tx_vanillacomments_domain_model_newsdefault.comments_enabled">
+				<source>Comments Enabled</source>
+			</trans-unit>
+			<trans-unit id="vanilla_forum_id">
+				<source>CategoryID in Vanilla Forum</source>
+			</trans-unit>
+			<trans-unit id="tx_news_domain_model_news.tx_extbase_type.Tx_VanillaComments_NewsDefault">
+				<source>Vanilla Comments NewsDefault</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

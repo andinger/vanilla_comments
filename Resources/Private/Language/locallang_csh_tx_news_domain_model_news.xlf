@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2016-05-14T14:32:19Z" product-name="vanilla_comments">
+		<header/>
+		<body>
+			<trans-unit id="comments_enabled.description">
+				<source>commentsEnabled</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>
