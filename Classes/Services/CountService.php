@@ -2,7 +2,6 @@
 
 namespace Andinger\VanillaComments\Services;
 
-
 use GeorgRinger\News\Domain\Model\News;
 
 class CountService
