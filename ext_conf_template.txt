@@ -7,3 +7,8 @@ client_id =
 # cat=basic//3; type=string; label=Vanilla Forum URL
 url =
 
+# cat=basic//4; type=string; label=Photo URL Template (###USERNAME### will be replaced)
+photoUrlTemplate =
+
+# cat=basic//5; type=string; label=Default Roles (, separated)
+defaultRoles = Member

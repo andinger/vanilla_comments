@@ -46,7 +46,7 @@ class SsoController extends ActionController
         $userData = [
             'name' => '',
             'uniqueid' => '',
-            // 'photourl' => '',
+            'photourl' => '',
             'email' => '',
             'roles' => ''
         ];
@@ -56,6 +56,11 @@ class SsoController extends ActionController
             $userData['uniqueid'] = $this->user['username'];
             $userData['email'] = $this->user['email'];
             $userData['roles'] = implode(',', $this->getGroups());
+
+            if(trim($this->config['photoUrlTemplate'])) {
+                $userData['photourl'] = str_ireplace('###username###', $this->user['username'], $this->config['photoUrlTemplate']);
+            }
+
         }
 
         ksort($userData);
@@ -79,8 +84,21 @@ class SsoController extends ActionController
     {
         $groups = $this->db->exec_SELECTgetRows('title', 'fe_groups', 'uid IN ('.$this->user['usergroup'].')');
 
-        return array_map(function($group) {
+        $groupNames = array_map(function($group) {
             return $group['title'];
         }, $groups);
+
+        $defaultRoles = explode(',', $this->config['defaultRoles']);
+
+        if(is_array($groupNames)) {
+            foreach($defaultRoles as $defaultRole) {
+                $groupNames[] = trim($defaultRole);
+            }
+        }
+        else {
+            $groupNames = $defaultRoles;
+        }
+
+        return $groupNames;
     }
 }
